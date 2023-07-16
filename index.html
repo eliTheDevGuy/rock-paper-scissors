@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
         <script>
-            let computerChoice  = Math.floor(Math.random() * 3) + 1;
-            if (computerChoice === 1) {
-                computerChoice = 'rock';
-            } else if (computerChoice === 2) {
-                computerChoice = 'paper';
-            } else if (computerChoice === 3) {
-                computerChoice = 'scissors';
+            function getComputerChoice() {
+                let computerChoice  = Math.floor(Math.random() * 3) + 1;
+                if (computerChoice === 1) {
+                    computerChoice = 'rock';
+                } else if (computerChoice === 2) {
+                    computerChoice = 'paper';
+                } else if (computerChoice === 3) {
+                    computerChoice = 'scissors';
+                }
             }
         </script>
     </head>
