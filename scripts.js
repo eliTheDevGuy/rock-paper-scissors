@@ -75,8 +75,8 @@ function playRound(playerSelection) {
         displayDiv.innerHTML = 'You Lose! Rock beats Scissors';
     }
 
-    playerScoreH3.innerHTML = playerScore;
-    computerScoreH3.innerHTML = computerScore;
+    playerScoreH3.innerHTML = `${playerScore} - Player`;
+    computerScoreH3.innerHTML = `${computerScore} - Computer`;
 
     if (playerScore === 5) {
         displayDiv.innerHTML = `Congratulations! You win the game.`;
